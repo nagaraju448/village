@@ -1,0 +1,5 @@
+
+<% @families.each do |f| %>
+Name:<%= f.name %><br>
+Address:<%= f.address %><br>
+<%end%>

@@ -1,0 +1,16 @@
+<% @members.each do |member| %>
+  <p>
+    <strong>Name:</strong>
+    <%= member.name %>
+  </p>
+ 
+  <p>
+    <strong>Age:</strong>
+    <%= member.age %>
+  </p>
+	<strong>Gender:</strong>
+	<%= member.gender ? 'male' : 'female' %>
+  
+	<p>
+	</p>
+<% end %>  

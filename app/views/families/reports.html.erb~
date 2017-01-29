@@ -1,0 +1,18 @@
+<h> List of Families with kids </h>
+<table>
+
+	<tr>
+	<th>Name</th>
+	<th>Address</th>
+        <th>Kids count</th>
+	<th colspan="3"></th>
+	</tr>
+
+<% @families.each do |f| %>
+<tr>
+<td><%= f.name %></td>
+<td><%= f.address %></td>
+<td><%= link_to "kids", family_kids_path(f) %></td>
+</tr>
+<%end%>
+</table>
